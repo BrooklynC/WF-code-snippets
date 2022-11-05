@@ -28,6 +28,60 @@
     defaultValue: "Multiple",
     optional: true
   },
+  footballScale: {
+    type: String,
+    label: "Football Scale",
+    allowedValues: ["millions","billions"],
+    defaultValue: "millions",
+    optional: true
+  },
+  includeCurrent: {
+    type: Boolean,
+    label: "Current Value",
+    defaultValue: false,
+    optional: true
+  },
+  includeTrading: {
+    type: Boolean,
+    label: "Include 52 week high/low",
+    defaultValue: false,
+    optional: true
+  },
+  viewers: {
+    type: [String],
+    label: "Football Viewers",
+    defaultValue: [],
+    optional: true
+  },
+  sentBy: {
+    type: String,
+    label: "Sent by",
+    optional: true
+  },
+  sharedBy: {
+    type: String,
+    label: "Shared by",
+    optional: true
+  },
+  footballValuations: {
+    type: [String],
+    label: "Valuations",
+    defaultValue: [],
+    optional: true
+  },
+  footballSort:{
+    type: String,
+    label: "Valuations Sort",
+    allowedValues: ["Date (oldest first)","Date (newest first)","Value (ascending)","Value (descending)","Manual"],
+    defaultValue: "Date (oldest first)",
+    optional: true
+  },
+  footballTarget: {
+    type: TargetSchema,
+    optional: true
+  }
+
+
   rangeEvLow: {
     type: Number,
     label: "Football Range Low - EV",
@@ -79,20 +133,9 @@
     defaultValue: 1,
     decimal: true,
     optional: true
-  },
-  footballScale: {
-    type: String,
-    label: "Football Scale",
-    allowedValues: ["millions","billions"],
-    defaultValue: "millions",
-    optional: true
-  },
-  includeCurrent: {
-    type: Boolean,
-    label: "Current Value",
-    defaultValue: false,
-    optional: true
-  },
+  }
+  
+  
   includeCurrentDate: {
     type: String,
     label: "Current Date",
@@ -113,12 +156,6 @@
     defaultValue: "LTM",
     optional: true
   },
-  includeTrading: {
-    type: Boolean,
-    label: "Include 52 week high/low",
-    defaultValue: false,
-    optional: true
-  },
   includeTradingMetric: {
     type: String,
     label: "52 week high/low multiple",
@@ -131,50 +168,5 @@
     label: "52 week high/low multiple period",
     allowedValues: ["LTM", "FY1", "FY2"],
     defaultValue: "LTM",
-    optional: true
-  },
-  viewers: {
-    type: [String],
-    label: "Football Viewers",
-    defaultValue: [],
-    optional: true
-  },
-  sentBy: {
-    type: String,
-    label: "Sent by",
-    optional: true
-  },
-  sharedBy: {
-    type: String,
-    label: "Shared by",
-    optional: true
-  },
-  footballValuations: {
-    type: [String],
-    label: "Valuations",
-    defaultValue: [],
-    optional: true
-  },
-  footballValuationsAll: {
-    type: [String],
-    label: "Valuations All",
-    defaultValue: [],
-    optional: true
-  },
-  footballSort:{
-    type: String,
-    label: "Valuations Sort",
-    allowedValues: ["Date (oldest first)","Date (newest first)","Value (ascending)","Value (descending)","Manual"],
-    defaultValue: "Date (oldest first)",
-    optional: true
-  },
-  footballLive: {
-    type: Boolean,
-    label: "Football Live",
-    defaultValue: false,
-    optional: true
-  },
-  footballTarget: {
-    type: TargetSchema,
     optional: true
   }
