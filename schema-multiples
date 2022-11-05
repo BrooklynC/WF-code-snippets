@@ -1,0 +1,84 @@
+    enterpriseValue: {
+        type: [Number],
+        label: "enterpriseValue",
+        decimal: true,
+        optional: true
+    },
+    pricePerShare: {
+        type: [Number],
+        label: "pricePerShare",
+        decimal: true,
+        optional: true
+    },
+    evRevenueLtm: {
+        type: [Number],
+        label: "EvRevenueLtm",
+        decimal: true,
+        optional: true
+    },
+    evRevenueFy1: {
+        type: [Number],
+        label: "EvRevenueFy1",
+        decimal: true,
+        optional: true
+    },
+    evRevenueFy2: {
+        type: [Number],
+        label: "EvRevenueFy2",
+        decimal: true,
+        optional: true
+    },
+    evEbitdaLtm: {
+        type: [Number],
+        label: "EvEbitdaLtm",
+        decimal: true,
+        optional: true
+    },
+    evEbitdaFy1: {
+        type: [Number],
+        label: "EvEbitdaFy1",
+        decimal: true,
+        optional: true
+    },
+    evEbitdaFy2: {
+        type: [Number],
+        label: "EvEbitdaFy2",
+        decimal: true,
+        optional: true
+    },
+    priceEarningsLtm: {
+        type: [Number],
+        label: "PriceEarningsLtm",
+        decimal: true,
+        optional: true
+    },
+    priceEarningsFy1: {
+        type: [Number],
+        label: "PriceEarningsFy1",
+        decimal: true,
+        optional: true
+    },
+    priceEarningsFy2: {
+        type: [Number],
+        label: "PriceEarningsFy2",
+        decimal: true,
+        optional: true
+    },
+    customValue: {
+        type: [Number],
+        label: "customValue",
+        decimal: true,
+        optional: true
+    },
+    customPrice: {
+        type: [Number],
+        label: "customPrice",
+        decimal: true,
+        optional: true
+    },
+    customMultiple: {
+        type: [Number],
+        label: "customMultiple",
+        decimal: true,
+        optional: true
+    }
