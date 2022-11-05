@@ -1,19 +1,29 @@
-    userId: {
+    targetId: {
+        type: String,
+        label: "Target ID",
+        optional: true
+    },
+    ownerId: {
         type: String,
         label: "User ID",
         optional: true
     },
-    companyName: {
-        type: String,
-        label: "Company Name",
+    timeDateCreated: {
+        type: Date,
+        label: "Date Added",
         optional: true
     },
-    sector: {
+    targetName: {
+        type: String,
+        label: "Target Name",
+        optional: true
+    },
+    targetSector: {
         type: String,
         label: "Sector",
         optional: true
     },
-    subSector: {
+    targetSubSector: {
         type: String,
         label: "Sub-Sector",
         optional: true
