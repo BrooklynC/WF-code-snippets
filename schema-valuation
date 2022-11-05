@@ -1,0 +1,86 @@
+    ownerId: {
+        type: String,
+        label: "Owner ID",
+        optional: true
+    },
+    valuationName: {
+        type: String,
+        label: "Valuation Name",
+        //defaultValue: "New Valuation",
+        optional: true
+    },
+    valuationType: {
+        type: String,
+        label: "Valuation Type",
+        allowedValues: ["comps","custom"],
+        defaultValue: "comps",
+        optional: true
+    },
+    valuationSelections: {
+        type: [String],
+        label: "Valuation Selections",
+        defaultValue: [],
+        optional: true
+    },
+    "valuationSelections.$.selection": {
+        type: String,
+        optional: true
+    },
+    valuationDate: {
+        type: String,
+        label: "Valuation Date",
+        defaultValue: "2015-12-31",
+        optional: true
+    },
+    valuationMetric: {
+        type: String,
+        label: "Valuation Metric",
+        allowedValues:  ["Enterprise Value", "Price per Share", "EV/Revenue","EV/EBITDA","P/E"],
+        optional: true
+    },
+    valuationPeriod: {
+        type: String,
+        label: "Valuation Period",
+        allowedValues: ["LTM","FY1","FY2"],
+        optional: true
+    },
+    valuationCalc: {
+        type: String,
+        label: "Valuation Calc",
+        allowedValues:  ["average", "median", "high", "low"],
+        defaultValue: "average",
+        optional: true
+    },
+    valuationSpread: {
+        type: Number,
+        label: "Valuation Spread",
+        defaultValue: 10,
+        decimal: true,
+        min: 0,
+        max: 50,
+        optional: true
+    },
+      timeCreated: {
+        type: Date,
+        label: "Date Added",
+        optional: true
+    },
+    viewers: {
+        type: [String],
+        label: "Valuation Viewers",
+        optional: true
+    },
+    sentBy: {
+        type: String,
+        label: "Sent by",
+        optional: true
+    },
+    sharedBy: {
+        type: String,
+        label: "Shared by",
+        optional: true
+    },
+    multiples: {
+        type: MultiplesSchema,
+        optional: true
+    }
