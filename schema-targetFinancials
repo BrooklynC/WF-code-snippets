@@ -1,0 +1,52 @@
+    netDebt: {
+        type: Number,
+        label: "Net Debt"
+    },
+    revenueLtm: {
+        type: Number,
+        label: "Revenue (LTM)"
+    },
+    ebitdaLtm: {
+        type: Number,
+        label: "EBITDA (LTM)"
+    },
+    epsLtm: {
+        type: Number,
+        label: "Net Income (LTM)"
+    },
+    netIncomeLtm: {
+        type: Number,
+        label: "Net Income (LTM)"
+    },
+    revenueFy1: {
+        type: Number,
+        label: "Revenue (FY1)"
+    },
+    ebitdaFy1: {
+        type: Number,
+        label: "EBITDA (FY1)"
+    },
+    epsFy1: {
+        type: Number,
+        label: "Net Income (FY1)"
+    },
+    netIncomeFy1: {
+        type: Number,
+        label: "Net Income (FY1)"
+    }.
+    revenueFy2: {
+        type: Number,
+        label: "Revenue (FY2)"
+    },
+    ebitdaFy2: {
+        type: Number,
+        label: "EBITDA (FY2)"
+    },
+    epsFy2: {
+        type: Number,
+        label: "Net Income (FY2)"
+    },
+    netIncomeFy2: {
+        type: Number,
+        label: "Net Income (FY2)"
+    }
