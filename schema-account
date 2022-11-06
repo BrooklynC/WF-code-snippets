@@ -1,0 +1,37 @@
+    userId: {
+        type: String,
+        label: "User ID",
+        optional: true
+    },
+    timeDateCreated: {
+        type: Date,
+        label: "Time Date Created",
+        optional: true
+    },
+    username: {
+        type: String,
+        label: "Username",
+        optional: true
+    },
+    password: {
+        type: String,
+        label: "Password",
+        optional: true
+    },
+    coverageFootballFields: {
+        type: [String],
+        label: "Coverage - Football Fields"
+    },
+    coverageValuations: {
+        type: [String],
+        label: "Coverage - Valuations"
+    },
+    coverageTargets: {
+        type: [String],
+        label: "Coverage - Targets"
+    },
+    footballFieldActive: {
+        type: String,
+        label: "Football Field - Active"
+    }
+    
