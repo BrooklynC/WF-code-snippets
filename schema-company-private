@@ -28,6 +28,12 @@
         label: "Sub-Sector",
         optional: true
     },
+    targetFinancials: {
+        type:
+        label: "Target Financials"
+    }
+
+Financials:
     netDebt: {
         type: Number,
         label: "Net Debt",
