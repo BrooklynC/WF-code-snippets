@@ -1,6 +1,15 @@
+    valuationId: {
+        type: String,
+        label: "Valuation ID"
+    },
     ownerId: {
         type: String,
         label: "Owner ID",
+        optional: true
+    },
+    timeDateCreated: {
+        type: Date,
+        label: "Date Added",
         optional: true
     },
     valuationName: {
@@ -22,8 +31,8 @@
         defaultValue: [],
         optional: true
     },
-    "valuationSelections.$.selection": {
-        type: String,
+    valuationMultiples: {
+        type: MultiplesSchema,
         optional: true
     },
     valuationDate: {
@@ -35,7 +44,7 @@
     valuationMetric: {
         type: String,
         label: "Valuation Metric",
-        allowedValues:  ["Enterprise Value", "Price per Share", "EV/Revenue","EV/EBITDA","P/E"],
+        allowedValues:  ["EV/Revenue","EV/EBITDA","P/E"],
         optional: true
     },
     valuationPeriod: {
@@ -60,12 +69,7 @@
         max: 50,
         optional: true
     },
-    timeDateCreated: {
-        type: Date,
-        label: "Date Added",
-        optional: true
-    },
-    viewers: {
+    valuationViewers: {
         type: [String],
         label: "Valuation Viewers",
         optional: true
@@ -79,8 +83,7 @@
         type: String,
         label: "Shared by",
         optional: true
-    },
-    multiples: {
-        type: MultiplesSchema,
-        optional: true
     }
+
+Multiples:
+<--need to fill in for Multiples Schema, see visual-->
