@@ -31,9 +31,6 @@
         defaultValue: [],
         optional: true
     },
-    valuationMultiples: {
-        <--see schema-multiples-->     
-    },
     valuationDate: {
         type: String,
         label: "Valuation Date",
@@ -51,6 +48,13 @@
         label: "Valuation Period",
         allowedValues: ["LTM","FY1","FY2"],
         optional: true
+    },
+    valuationCompResults: {
+        <--see schema-valuationCompResults-->
+    },
+    },
+    valuationCustom: {
+        <--see schema-valuationCustomResults-->
     },
     valuationCalc: {
         type: String,
