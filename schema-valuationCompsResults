@@ -63,22 +63,4 @@
         label: "PriceEarningsFy2",
         decimal: true,
         optional: true
-    },
-    customValue: {
-        type: [Number],
-        label: "customValue",
-        decimal: true,
-        optional: true
-    },
-    customPrice: {
-        type: [Number],
-        label: "customPrice",
-        decimal: true,
-        optional: true
-    },
-    customMultiple: {
-        type: [Number],
-        label: "customMultiple",
-        decimal: true,
-        optional: true
     }
