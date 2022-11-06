@@ -1,0 +1,27 @@
+  valuationSelections: {
+        type: [String],
+        label: "Valuation Selections",
+        defaultValue: [],
+        optional: true
+    },
+    valuationDate: {
+        type: String,
+        label: "Valuation Date",
+        defaultValue: "2015-12-31",
+        optional: true
+    },
+    valuationMetric: {
+        type: String,
+        label: "Valuation Metric",
+        allowedValues:  ["EV/Revenue","EV/EBITDA","P/E"],
+        optional: true
+    },
+    valuationPeriod: {
+        type: String,
+        label: "Valuation Period",
+        allowedValues: ["LTM","FY1","FY2"],
+        optional: true
+    },
+    valuationCompResults: {
+        <--see schema-valuationCompResults-->
+    }
