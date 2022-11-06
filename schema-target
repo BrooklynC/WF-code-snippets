@@ -29,46 +29,5 @@
         optional: true
     },
     targetFinancials: {
-        type:
-        label: "Target Financials"
-    }
-
-Financials:
-    netDebt: {
-        type: Number,
-        label: "Net Debt",
-        min: 0,
-        decimal: true,
-        optional: true
-    },
-    revenue: {
-        type: Number,
-        label: "Revenue",
-        min: 0,
-        decimal: true,
-        optional: true
-    },
-    ebitda: {
-        type: Number,
-        label: "EBITDA",
-        decimal: true,
-        optional: true
-    },
-    netIncome: {
-        type: Number,
-        label: "Net Income",
-        decimal: true,
-        optional: true
-    },
-    ltm: {
-        type: ValueSchema,
-        optional: true
-    },
-    fy1: {
-        type: ValueSchema,
-        optional: true
-    },
-    fy2: {
-        type: ValueSchema,
-        optional: true
+        <--see schema-targetFinancials-->
     }
