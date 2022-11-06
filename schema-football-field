@@ -58,6 +58,13 @@
     defaultValue: false,
     optional: true
   },
+  includeMultiple: {
+    <--if the user elects to show the values based on the current stock price and the 52 week high/low, with the football field showing multiples as the output, then they need to also decide which multiple to show for these values-->
+    type: String,
+    label: "Tradling Levels Multiple",
+    options: ["EV/Revenue (LTM)","EV/Revenue (FY1)","EV/Revenue (FY1)","EV/EBITDA (LTM)","EV/EBITDA (FY1)","EV/EBITDA (FY2)","P/E (LTM)","P/E (FY1)","P/E (FY2)"]
+    optional: true
+  },
   footballFieldviewers: {
     type: [String],
     label: "Football Viewers",
