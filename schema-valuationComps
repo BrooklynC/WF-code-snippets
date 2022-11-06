@@ -23,5 +23,5 @@
         optional: true
     },
     valuationCompResults: {
-        <--see schema-valuationCompResults-->
+        <--see schema-valuationCompsResults-->
     }
