@@ -1,0 +1,13 @@
+    valuationCustomName: {
+        type: String,
+        label: "Valuation Custom Name",
+    },
+    valuationCustomMetric: {
+        type: String,
+        label: "Valuation Custom Metric",
+        options: ["Enterprise Value", "Price per Share", "Multiple"]
+    },
+    valuationCustomValue: {
+        type: Number,
+        label: "Valuation Custom Value",
+    }
