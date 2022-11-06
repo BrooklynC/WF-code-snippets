@@ -1,9 +1,14 @@
+  footballFieldId: {
+    type: String,
+    label: "Football Field ID",
+    optional: false,
+  }
   ownerId: {
     type: String,
     label: "Owner ID",
-    optional: true
+    optional: false
   },  
-  timeCreated: {
+  timeDateCreated: {
     type: Date,
     label: "Date Added",
     optional: true
@@ -35,19 +40,25 @@
     defaultValue: "millions",
     optional: true
   },
+  footballFieldValuations: {
+    type: [String],
+    label: "Valuations",
+    defaultValue: [],
+    optional: true
+  },
   includeCurrent: {
     type: Boolean,
     label: "Current Value",
     defaultValue: false,
     optional: true
   },
-  includeTrading: {
+  includeRange: {
     type: Boolean,
     label: "Include 52 week high/low",
     defaultValue: false,
     optional: true
   },
-  viewers: {
+  footballFieldviewers: {
     type: [String],
     label: "Football Viewers",
     defaultValue: [],
@@ -63,25 +74,19 @@
     label: "Shared by",
     optional: true
   },
-  footballValuations: {
-    type: [String],
-    label: "Valuations",
-    defaultValue: [],
-    optional: true
-  },
-  footballSort:{
+  footballFieldSort:{
     type: String,
     label: "Valuations Sort",
     allowedValues: ["Date (oldest first)","Date (newest first)","Value (ascending)","Value (descending)","Manual"],
     defaultValue: "Date (oldest first)",
     optional: true
   },
-  footballTarget: {
+  footballFieldTargetId: {
     type: TargetSchema,
     optional: true
   }
 
-
+<--To review, these may be needed to define the outer bounds of the football field.-->
   rangeEvLow: {
     type: Number,
     label: "Football Range Low - EV",
@@ -135,7 +140,7 @@
     optional: true
   }
   
-  
+<--To review, these may be needed to define the current stock price and trading range.-->
   includeCurrentDate: {
     type: String,
     label: "Current Date",
