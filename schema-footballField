@@ -1,7 +1,7 @@
   footballFieldId: {
     type: String,
     label: "Football Field ID",
-    optional: false,
+    optional: false
   }
   ownerId: {
     type: String,
@@ -11,52 +11,52 @@
   timeDateCreated: {
     type: Date,
     label: "Date Added",
-    optional: true
+    optional: false
   },
   footballName: {
     type: String,
     label: "Football Field Name",
     defaultValue: "New Football Field",
-    optional: true
+    optional: false
   },
   footballType: {
     type: String,
     label: "Football Field Type",
     allowedValues: ["target","market"],
     defaultValue: "market",
-    optional: true
+    optional: false
   },
   footballOutput: {
     type: String,
     label: "Football Output",
     allowedValues: ["Enterprise Value","Price per Share","Multiple"],
     defaultValue: "Multiple",
-    optional: true
+    optional: false
   },
   footballScale: {
     type: String,
     label: "Football Scale",
     allowedValues: ["millions","billions"],
     defaultValue: "millions",
-    optional: true
+    optional: false
   },
   footballFieldValuations: {
     type: [String],
     label: "Valuations",
     defaultValue: [],
-    optional: true
+    optional: false
   },
   includeCurrent: {
     type: Boolean,
     label: "Current Value",
     defaultValue: false,
-    optional: true
+    optional: false
   },
   includeRange: {
     type: Boolean,
     label: "Include 52 week high/low",
     defaultValue: false,
-    optional: true
+    optional: false
   },
   includeMultiple: {
     <--if the user elects to show the values based on the current stock price and the 52 week high/low, with the football field showing multiples as the output, then they need to also decide which multiple to show for these values-->
