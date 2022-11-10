@@ -1,0 +1,46 @@
+getRangeCaps = function(footballId) {
+    var football = Footballs.findOne({_id:footballId});
+    //checks the football with that ID exists
+    if(football) {
+        var valuations = football.footballValuations;
+        var valuationsCount = valuations.length;
+        //results will be two arrays - one is an array of the all the low values for Valutions in the Football Field, one is the high values
+        var results = {
+            low: [],
+            high: []
+        };
+        //checks that there is at least one Valuation in the Football Field
+        if(valuationsCount > 0) {
+            valuations.forEach(function(valuationId) {
+                var valuation = Valuations.findOne({_id:valuationId});
+                //checks that the Valuation with that ID exists
+                if(valuation) {
+                    //check that the Valuation has at least one comp and thus has calculated values
+                    var valuationSelections = valuation.valuationSelections;
+                    var valuationSelectionsCount = valuationSelections.length;
+                    if(valuationSelectionsCount > 0) {
+                        //valuationSpread is the % added to the left and right of the calculated value
+                        var valuationSpread = valuation.valuationSpread;
+                        //activeResult is the calculated midpoint value of the Valuation
+                        var activeResult = getResultValue(footballId, valuationId);
+                        //activeResultAdj is the low and high value of the bar for the Valuation
+                        var activeResultAdj = {
+                            low: activeResult * (1 - valuationSpread/100),
+                            high: activeResult * (1 + valuationSpread/100)
+                        };
+                        if (activeResult) {
+                            //array of low values
+                            results.low.push(activeResultAdj.low);
+                            //array of high values
+                            results.high.push(activeResultAdj.high);
+                            }
+                        //I'm not sure if this is where the return statement should go but this finds the lowest value of the low array, setting to 0 if the n
+                        //numbers are negative and the high value of the high array
+                        return {
+                            min: Math.max.apply(0, results.low)
+                            max: Math.max.apply(Math,results.high)
+                    }
+                }
+            });
+        }
+    }
