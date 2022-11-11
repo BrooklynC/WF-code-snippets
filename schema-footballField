@@ -22,14 +22,14 @@
   footballType: {
     type: String,
     label: "Football Field Type",
-    allowedValues: ["target","market"],
-    defaultValue: "market",
+    allowedValues: ["target"],
+    defaultValue: "target",
     optional: false
   },
   footballOutput: {
     type: String,
     label: "Football Output",
-    allowedValues: ["Enterprise Value","Price per Share","Multiple"],
+    allowedValues: ["Enterprise Value","Multiple"],
     defaultValue: "Multiple",
     optional: false
   },
@@ -45,25 +45,6 @@
     label: "Valuations",
     defaultValue: [],
     optional: false
-  },
-  includeCurrent: {
-    type: Boolean,
-    label: "Current Value",
-    defaultValue: false,
-    optional: false
-  },
-  includeRange: {
-    type: Boolean,
-    label: "Include 52 week high/low",
-    defaultValue: false,
-    optional: false
-  },
-  includeMultiple: {
-    <--if the user elects to show the values based on the current stock price and the 52 week high/low, with the football field showing multiples as the output, then they need to also decide which multiple to show for these values-->
-    type: String,
-    label: "Tradling Levels Multiple",
-    options: ["EV/Revenue (LTM)","EV/Revenue (FY1)","EV/Revenue (FY1)","EV/EBITDA (LTM)","EV/EBITDA (FY1)","EV/EBITDA (FY2)","P/E (LTM)","P/E (FY1)","P/E (FY2)"]
-    optional: true
   },
   footballFieldviewers: {
     type: [String],
@@ -137,48 +118,5 @@
     label: "Football Range High - Multiple",
     defaultValue: 10,
     decimal: true,
-    optional: true
-  },
-  footballCushion: {
-    type: Number,
-    label: "Cushion",
-    defaultValue: 1,
-    decimal: true,
-    optional: true
-  }
-  
-<--To review, these may be needed to define the current stock price and trading range.-->
-  includeCurrentDate: {
-    type: String,
-    label: "Current Date",
-    defaultValue: "2015-12-31",
-    optional: true
-  },
-  includeCurrentMetric: {
-    type: String,
-    label: "Include Current Metric",
-    allowedValues: ["EV/Revenue", "EV/EBITDA", "P/E"],
-    defaultValue: "EV/EBITDA",
-    optional: true
-  },
-  includeCurrentPeriod: {
-    type: String,
-    label: "Include Current Metric",
-    allowedValues: ["LTM", "FY1", "FY2"],
-    defaultValue: "LTM",
-    optional: true
-  },
-  includeTradingMetric: {
-    type: String,
-    label: "52 week high/low multiple",
-    allowedValues: ["EV/Revenue", "EV/EBITDA", "P/E"],
-    defaultValue: "EV/EBITDA",
-    optional: true
-  },
-  includeTradingPeriod: {
-    type: String,
-    label: "52 week high/low multiple period",
-    allowedValues: ["LTM", "FY1", "FY2"],
-    defaultValue: "LTM",
     optional: true
   }
