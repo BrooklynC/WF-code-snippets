@@ -21,15 +21,29 @@
     valuationType: {
         type: String,
         label: "Valuation Type",
-        allowedValues: ["comps","custom"],
+        allowedValues: ["comps"],
         defaultValue: "comps",
         optional: true
     },
     valuationComps: {
-        <--see schema-valuationComps-->
-    },
-    valuationCustom: {
-        <--see schema-valuationCustom-->
+        enterpriseValue: {
+            type: [Number],
+            label: "enterpriseValue",
+            decimal: true,
+            optional: true
+        },
+        evRevenueLtm: {
+            type: [Number],
+            label: "EvRevenueLtm",
+            decimal: true,
+            optional: true
+        },
+        evEbitdaLtm: {
+            type: [Number],
+            label: "EvEbitdaLtm",
+            decimal: true,
+            optional: true
+        }
     },
     valuationCalc: {
         type: String,
