@@ -29,5 +29,12 @@
         optional: true
     },
     targetFinancials: {
-        <--see schema-targetFinancials-->
+        revenueLtm: {
+            type: Number,
+            label: "Revenue (LTM)"
+        },
+        ebitdaLtm: {
+            type: Number,
+            label: "EBITDA (LTM)"
+        }
     }
