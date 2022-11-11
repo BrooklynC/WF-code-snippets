@@ -1,8 +1,0 @@
-    revenueLtm: {
-        type: Number,
-        label: "Revenue (LTM)"
-    },
-    ebitdaLtm: {
-        type: Number,
-        label: "EBITDA (LTM)"
-    }
