@@ -1,0 +1,40 @@
+    meanMultiples: {
+        evRevenueLtm: {
+            type: Number,
+            label: "EV / Revenue (LTM)",
+        },
+        evEbitdaLtm: {
+            type: Number,
+            label: "EV / Ebitda (LTM)",
+        }
+    },
+    medianMultiples: {
+        evRevenueLtm: {
+            type: Number,
+            label: "EV / Revenue (LTM)",
+        },
+        evEbitdaLtm: {
+            type: Number,
+            label: "EV / Ebitda (LTM)",
+        }
+    },
+    lowMultiples: {
+        evRevenueLtm: {
+            type: Number,
+            label: "EV / Revenue (LTM)",
+        },
+        evEbitdaLtm: {
+            type: Number,
+            label: "EV / Ebitda (LTM)",
+        }
+    },
+    highMultiples: {
+        evRevenueLtm: {
+            type: Number,
+            label: "EV / Revenue (LTM)",
+        },
+        evEbitdaLtm: {
+            type: Number,
+            label: "EV / Ebitda (LTM)",
+        }
+    }
